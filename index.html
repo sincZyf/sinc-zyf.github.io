@@ -1,1 +1,116 @@
+<<<<<<< HEAD
 111
+=======
+<!doctype html>
+<html lang="UTF-8" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf8">
+    <title>Lee的个人博客 - 看山仍是山</title>
+    <meta name="keywords" content="个人博客,Lee个人博客"/>
+    <meta name="description" content="Lee的个人博客"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/base.css" rel="stylesheet">
+    <link href="../static/css/index.css" rel="stylesheet">
+    <link href="../static/css/m.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../static/js/modernizr.js"></script>
+
+    <![endif]-->
+    <script>
+        window.onload = function () {
+            var oH2 = document.getElementsByTagName("h2")[0];
+            var oUl = document.getElementsByTagName("ul")[0];
+            oH2.onclick = function () {
+                var style = oUl.style;
+                style.display = style.display === "block" ? "none" : "block";
+                oH2.className = style.display === "block" ? "open" : ""
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="tophead">
+        <div class="logo"><a href="index.html">Lee的博客</a></div>
+        <nav class="topnav" id="topnav">
+            <ul>
+                <li><a href="javascript:;" onclick="x_admin_show_without_refresh('最新投票', './vote.html', 700, 450);">投票</a></li>
+                <li><a href="javascript:;" onclick="x_admin_show_without_refresh('最新公告', './notice.html', 700, 450);">公告</a></li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="leave.html">留言</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="../login.html">登陆</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<article id="index-article">
+    <div class="blogs">
+        <li v-for="article in articleList" class="article_info">
+            <h3 class="blogtitle"><a :href="'detail.html?article_id=' + article.id">{{article.article_title}}</a></h3>
+            <div class="bloginfo">
+                <p>{{article.article_summary}}</p>
+            </div>
+            <div class="autor">
+                <span class="dtime">{{article.CreatedAt}}</span>
+                <span class="viewnum">浏览（{{article.article_views}}）</span>
+                <span class="pingl">评论（{{article.article_comments}}）</span>
+                <a class="like" href="javascript:;" @click="likeArticle(article.id)"><span>喜欢（{{article.article_likes}}）</span></a>
+                <a class="lm" href="javascript:;" @click="collectArticle(article.id)"> <span>收藏（{{article.article_collects}}）</span></a>
+                <span class="readmore"><a :href="'detail.html?article_id=' +  article.id" target="_blank">阅读原文</a></span>
+            </div>
+        </li>
+    </div>
+    <div class="sidebar">
+        <div class="about">
+            <div class="avatar"><img src="../static/images/me.jpg" alt=""></div>
+            <p class="abname">行歌.(KapChou-6)</p>
+            <p class="abposition">职业：学生</p>
+            <div class="abtext">人生漫长转瞬即逝，有人尘埃有人见星辰。</div>
+        </div>
+        <div class="cloud">
+            <ul>
+                <a class="hometitle" :href="userCenterLink" v-text="status"></a>
+            </ul>
+        </div>
+        <div class="search">
+            <form>
+               <label>
+                    <input v-model="searchContent" class="input_text" value="请输入关键字" style="color: rgb(153, 153, 153);" onfocus="if(value==='请输入关键字'){this.style.color='#000';value=''}" onblur="if(value===''){this.style.color='#999';value='请输入关键字'}" type="text">
+                </label>
+                <button class="input_submit" @click="searchArticle" type="button">搜索</button>
+            </form>
+        </div>
+        <div class="paihang">
+            <h2 class="hometitle">热门推荐</h2>
+            <ul v-for="item in hotArticle">
+                <li>
+                    <b><a :href="'detail.html?article_id=' + item.id" target="_blank">{{item.article_title}}</a></b>
+                    <p><i><img :src="item.picId" alt=""></i>{{item.article_summary}}
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="links">
+            <h2 class="hometitle">友情链接</h2>
+            <ul>
+                <li><a href="http://blog.sinc-zyf.top/" target="_blank" title="KaplanLee的个人博客">KaplanLee的个人博客&nbsp;&nbsp;</a></li>
+                <li><a href="http://blog.jaronnie.com/" target="_blank" title="Jay的个人博客">&nbsp;&nbsp;Jay的个人博客</a></li>
+            </ul>
+        </div>
+    </div>
+</article>
+<div class="blank"></div>
+<footer>
+    <p>Design by <a href="index.html">Lee的个人博客</a></p>
+</footer>
+<script src="../static/js/nav.js"></script>
+<script src="../lib/vue.js"></script>
+<script src="../lib/axios.min.js"></script>
+<script type="text/javascript" src="../lib/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript" src="../lib/layui/layui.all.js" charset="utf-8"></script>
+<script src="../js/xadmin.js"></script>
+<script src="../static/js/index-user.js"></script>
+</body>
+</html>
+>>>>>>> f9bed30 (first)
