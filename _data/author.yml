@@ -1,5 +1,5 @@
 name: sinc_zyf
-dp: "{{site.baseurl}}/_data/head_pic.jpg"
+dp: {{site.baseurl}}/_data/head_pic.jpg
 description: "
   <p>
     Welcome, this is my personal Blog.
