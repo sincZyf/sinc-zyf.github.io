@@ -4,7 +4,6 @@ title: Jekyll Markdown
 date: 2021-11-04
 categories: ["jekyll", "Test Post", "first post"]
 ---
-
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`
 
 [Link to another page](./another-page.html).
@@ -57,16 +56,16 @@ end
 
 ##### Header 5
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+1. This is an ordered list following a header.
+2. This is an ordered list following a header.
+3. This is an ordered list following a header.
 
 ###### Header 6
 
-| head1        | head two          | three |
-| :----------- | :---------------- | :---- |
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
+| head1        | head two            | three |
+| :----------- | :------------------ | :---- |
+| ok           | good swedish fish   | nice  |
+| out of stock | good and plenty     | nice  |
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
 
@@ -83,17 +82,17 @@ end
 
 ### And an ordered list:
 
-1.  Item one
-    1.  Item one
-    1.  Item two
-        1.  Item one
-        1.  Item two
-        1.  Item three
-    1.  Item three
-1.  Item four
-1.  Item two
-1.  Item three
-1.  Item four
+1. Item one
+   1. Item one
+   2. Item two
+      1. Item one
+      2. Item two
+      3. Item three
+   3. Item three
+2. Item four
+3. Item two
+4. Item three
+5. Item four
 
 ### And a nested list:
 
