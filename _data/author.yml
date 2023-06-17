@@ -1,4 +1,4 @@
-name: sinc_zyf
+name: Kaplan Chou
 dp: ../assets/pic/head_pic.jpg
 description: "
   <p>
@@ -11,13 +11,9 @@ description: "
 "
 email: sinc_zyf@163.com
 contact:
-  - title: linkedin
-    url: https://www.linkedin.com/in/srsmaurya
+  - title: wechat
+    url: ../assets/pic/wechat.jpg
   - title: github
     url: https://github.com/sinczyf
-  - title: twitter
-    url: https://twitter.com/iamsharadraj
-  - title: dev
-    url: https://dev.to/sharadcodes
   - title: email
     url: mailto:sinc_zyf@163.com
