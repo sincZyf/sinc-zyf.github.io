@@ -1,10 +1,10 @@
-title: sinc_zyf
+title: Kaplan Chou
 markdown: kramdown
 
 # for atom feed
 author:
-  name: Sharad Raj Singh Maurya
-  email: dev_sharad@outlook.com
+  name: Kaplan Chou
+  email: sinc_zyf@163.com
 
 plugins:
   - jemoji
