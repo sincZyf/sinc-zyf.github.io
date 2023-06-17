@@ -2,16 +2,12 @@ name: Kaplan Chou
 dp: ../assets/pic/head_pic.jpg
 description: "
   <p>
-    Welcome, this is my personal Blog. 
+    Welcome to my Blog. You could follow me on <a href='https://github.com/sinczyf' target='_blank'>Github</a>
   </p>
   <br/>
   <p>
-    Now, I'm a postgraduate student in Beijing University of Technology.My research interests are deep learning and data mining.
+    Now, I'm a postgraduate student in Beijing University of Technology. My research interests are deep learning and data mining.
   </p>
-  <br/>
-  <p>
-    You could him on <a href='https://github.com/sinczyf' target='_blank'>Github</a>
-  </P>
 "
 email: sinc_zyf@163.com
 contact:
