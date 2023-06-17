@@ -3,7 +3,11 @@ dp: ../assets/pic/head_pic.jpg
 description: "
   <p>
     Welcome, this is my personal Blog. 
+  </p>
+  <p>
     Now, I'm a postgraduate student in Beijing University of Technology.
+  </p>
+  <p>
     My research interests are deep learning and data mining.
   </p>
   <br/>
@@ -13,11 +17,11 @@ description: "
 "
 email: sinc_zyf@163.com
 contact:
-  - title: wechat
-    url: ../assets/pic/wechat.jpg
-  - title: zhihu
-    url: https://www.zhihu.com/people/xing-ge-85-57
   - title: github
     url: https://github.com/sinczyf
   - title: email
     url: mailto:sinc_zyf@163.com
+  - title: wechat
+    url: ../assets/pic/wechat.jpg
+  - title: zhihu
+    url: https://www.zhihu.com/people/xing-ge-85-57
